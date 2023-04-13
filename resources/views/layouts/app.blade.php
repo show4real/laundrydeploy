@@ -73,7 +73,7 @@
     />
 
     <!-- animation css -->
-    <link
+    <!-- <link
       id="color-link"
       rel="stylesheet"
       type="text/css"
@@ -84,7 +84,7 @@
       rel="stylesheet"
       type="text/css"
       href="/assets/css/font-style.css"
-    />
+    /> -->
 
     <!-- Template css -->
     <link
@@ -128,44 +128,7 @@
     <!-- Lazyload Js -->
     <script src="/assets/js/lazysizes.min.js"></script>
 
-    <!-- Slick js-->
-    <script src="/assets/js/slick/slick.js"></script>
-    <script src="/assets/js/slick/slick-animation.min.js"></script>
-    <script src="/assets/js/custom-slick-animated.js"></script>
-    <script src="/assets/js/slick/custom_slick.js"></script>
-
-    <!-- Range slider js -->
-    <script src="/assets/js/ion.rangeSlider.min.js"></script>
-
-    <!-- Auto Height Js -->
-    <script src="/assets/js/auto-height.js"></script>
-
-    <!-- Lazyload Js -->
-    <script src="/assets/js/lazysizes.min.js"></script>
-
-    <!-- Quantity js -->
-    <script src="/assets/js/quantity-2.js"></script>
-
-    <!-- Fly Cart Js -->
-    <script src="/assets/js/fly-cart.js"></script>
-
-    <!-- Timer Js -->
-    <script src="/assets/js/timer1.js"></script>
-    <script src="/assets/js/timer2.js"></script>
-
-    <!-- Copy clipboard Js -->
-    <script src="/assets/js/clipboard.min.js"></script>
-    <script src="/assets/js/copy-clipboard.js"></script>
-
-    <!-- WOW js -->
-    <script src="/assets/js/wow.min.js"></script>
-    <script src="/assets/js/custom-wow.js"></script>
-
-    <!-- script js -->
-    <script src="/assets/js/script.js"></script>
-
-    <!-- thme setting js -->
-    <script src="/assets/js/theme-setting.js"></script>
+    
   </body>
 
   <!-- Mirrored from themes.pixelstrap.com/fastkart/front-end/index-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Jan 2023 05:48:05 GMT -->
