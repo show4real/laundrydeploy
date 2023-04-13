@@ -1,0 +1,42 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "axios": "^0.21",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14"
+    },
+    "dependencies": {
+        "@babel/preset-react": "^7.18.6",
+        "@mapbox/search-js-react": "^1.0.0-beta.14",
+        "antd": "^5.4.0",
+        "babel-loader": "^9.1.2",
+        "bootstrap": "^5.2.3",
+        "react": "^18.2.0",
+        "react-admin-component": "0.0.1-pzfe3pdp",
+        "react-alert": "^7.0.3",
+        "react-alert-template-basic": "^1.0.2",
+        "react-auto-complete-address-fields": "^1.0.1",
+        "react-autosuggest-geocoder": "^1.0.1",
+        "react-bootstrap": "^2.7.2",
+        "react-dom": "^18.2.0",
+        "react-geocode": "^0.2.3",
+        "react-google-maps": "^9.4.5",
+        "react-loading-skeleton": "^3.2.0",
+        "react-multi-carousel": "^2.8.3",
+        "react-owl-carousel": "^2.3.2",
+        "react-places-autocomplete": "^7.3.0",
+        "react-router-dom": "^6.10.0",
+        "reactjs-alert": "^2.2.0",
+        "styled-components": "^5.3.9"
+    }
+}
