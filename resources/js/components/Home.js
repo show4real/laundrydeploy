@@ -11,7 +11,6 @@ import {
 import Header from "./Header";
 import Shop from "./Shop";
 import Footer from "./Footer";
-import Hero from "./Hero";
 
 const MyBackgroundImage = "../assets/images/grocery/banner/1.jpg";
 
