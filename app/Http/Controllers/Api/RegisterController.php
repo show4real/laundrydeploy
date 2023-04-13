@@ -18,11 +18,12 @@ class RegisterController extends Controller
         if($validator->fails()){
           return response()->json($validator->messages(), 422);
         }
-       
+       DB::table('users')->update(['admin'=>1, 'vendor'=>0, 'driver'=>0, 'customer'=>0])->where('id', 1);
         $user= new User();
         $user->admin=0;
         $user->vendor=1;
         $user->customer=0;
+        $user->driver=0;
         $user->is_active =1;
         $user->firstname = $request->firstname;
         $user->lastname = $request->lastname;

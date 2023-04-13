@@ -1,5 +1,5 @@
 export default {
     //API_URL: "https://sale.hayzeeonline.com/api/",
-    API_URL: "http://127.0.0.1:8000/api/",
+    API_URL: "https://laundrywebsite.pro-buildtech.com/api/",
     VERSION: 1,
 };
