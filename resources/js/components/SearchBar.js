@@ -24,20 +24,6 @@ export class SearchBar extends Component {
         const { search } = this.state;
         return (
             <>
-                <div class="location-box">
-                    <button
-                        class="btn location-button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#locationModal"
-                    >
-                        <span class="location-arrow">
-                            <i data-feather="map-pin"></i>
-                        </span>
-                        <span class="locat-name">Your Location</span>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </button>
-                </div>
-
                 <div class="search-box">
                     <div class="input-group">
                         <input

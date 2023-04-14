@@ -123,11 +123,10 @@ export class Home extends Component {
                     class="home-section-2 home-section-bg pt-0 overflow-hidden"
                     style={{
                         backgroundImage: `url(${MyBackgroundImage})`,
-                        // backgroundImage: `url(${externalImage})`,
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
                         backgroundPosition: "center",
-                        height: "500px",
+                        height: "auto",
                     }}
                 >
                     <div class="container-fluid p-0">
@@ -150,13 +149,12 @@ export class Home extends Component {
                                                     Fresh & Top Quality Dry
                                                     Fruits are available here!
                                                 </h5>
-                                                <button
-                                                    class="btn theme-bg-color btn-md text-white fw-bold mt-md-4 mt-2 mend-auto"
-                                                    onclick="location.href = 'shop-left-sidebar.html';"
-                                                >
-                                                    Shop Now{" "}
-                                                    <i class="fa-solid fa-arrow-right icon"></i>
-                                                </button>
+                                                <a href="/">
+                                                    <button class="btn theme-bg-color btn-md text-white fw-bold mt-md-4 mt-2 mend-auto">
+                                                        Shop Now{" "}
+                                                        <i class="fa fa-solid fa-arrow-right icon"></i>
+                                                    </button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

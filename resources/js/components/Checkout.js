@@ -374,8 +374,7 @@ export class Checkout extends Component {
                                                                                 fields={{
                                                                                     streetAddress:
                                                                                         "route",
-                                                                                    streetAddress2:
-                                                                                        "administrative_area_level_4",
+
                                                                                     locality:
                                                                                         "locality",
                                                                                     cityOrState:

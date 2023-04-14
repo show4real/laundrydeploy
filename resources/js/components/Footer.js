@@ -5,16 +5,16 @@ export class Footer extends Component {
         return (
             <footer
                 class="section-t-space footer-section-2 footer-color-2"
-                style={{ marginTop: 200, padding: 0 }}
+                style={{ marginTop: 200 }}
             >
                 <div class="container-fluid-lg">
                     <div class="main-footer">
-                        <div class="row g-md-4 gy-sm-5">
+                        <div
+                            class="row g-md-4 gy-sm-5 "
+                            style={{ paddingTop: 40 }}
+                        >
                             <div class="col-xxl-3 col-xl-4 col-sm-6">
-                                <a
-                                    href="index.html"
-                                    class="foot-logo theme-logo"
-                                >
+                                <a href="/" class="foot-logo theme-logo">
                                     <img
                                         src="/assets/images/logo/4.png"
                                         class="img-fluid blur-up lazyload"

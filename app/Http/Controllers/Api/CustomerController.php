@@ -87,6 +87,7 @@ class CustomerController extends Controller
 
      public function products(Request $request){
         $products = Product::where('shop_id', $request->vendor)
+        ->where('status', 1)
         ->paginate($request->rows, ['*'], 'page', $request->page);
         return response()->json(compact('products'));
     }
@@ -120,6 +121,7 @@ class CustomerController extends Controller
 
     public function serviceProducts(Request $request){
         $products = Product::where('shop_id', $request->vendor)
+        ->where('status', 1)
         ->service($request->service_id)
            ->paginate($request->rows, ['*'], 'page', $request->page);
         return response()->json(compact('products'));
@@ -127,6 +129,7 @@ class CustomerController extends Controller
 
     public function search(Request $request){
         $searches = Product::search($request->search)
+            ->where('status', 1)
             ->with('vendor')
             ->paginate($request->rows, ['*'], 'page', $request->page);
         return response()->json(compact('searches'));

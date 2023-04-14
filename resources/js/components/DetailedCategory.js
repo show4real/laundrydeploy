@@ -166,7 +166,7 @@ export class DetailedCategory extends Component {
                                         <div class="show-button">
                                             <div class="filter-button d-inline-block d-lg-none">
                                                 <a>
-                                                    <i class="fa-solid fa-filter"></i>{" "}
+                                                    <i class="fa fa-solid fa-filter"></i>{" "}
                                                     Filter Menu
                                                 </a>
                                             </div>

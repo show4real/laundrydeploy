@@ -5,6 +5,7 @@ import { Pagination } from "antd";
 import { getSearches } from "../services/categoryService";
 import Header from "./Header";
 import Footer from "./Footer";
+import SearchBar from "./SearchBar";
 export class Search extends Component {
     constructor(props) {
         super(props);
@@ -52,7 +53,18 @@ export class Search extends Component {
         return (
             <>
                 <Header />
+
                 <div class="container-fluid-lg">
+                    <div
+                        className="row d-md-none d-block"
+                        style={{ marginBottom: 30, marginTop: 20 }}
+                    >
+                        <div className="col-sm-12">
+                            <div class="middle-box">
+                                <SearchBar />
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-custome-12">
                             <div class="row g-sm-4 g-3 row-cols-xxl-4 row-cols-xl-3 row-cols-lg-2 row-cols-md-3 row-cols-2 product-list-section">

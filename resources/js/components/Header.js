@@ -161,13 +161,10 @@ export class Header extends Component {
                                             data-bs-target="#primaryMenu"
                                         >
                                             <span class="navbar-toggler-icon">
-                                                <i class="fa-solid fa-bars"></i>
+                                                <i class="fa fa-bars"></i>
                                             </span>
                                         </button>
-                                        <a
-                                            href="index.html"
-                                            class="web-logo nav-logo"
-                                        >
+                                        <a href="/" class="web-logo nav-logo">
                                             <img
                                                 src="/assets/images/logo/1.png"
                                                 class="img-fluid blur-up lazyload"
@@ -176,6 +173,21 @@ export class Header extends Component {
                                         </a>
 
                                         <div class="middle-box">
+                                            <div class="location-box">
+                                                <button
+                                                    class="btn location-button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#locationModal"
+                                                >
+                                                    <span class="location-arrow">
+                                                        <i data-feather="map-pin"></i>
+                                                    </span>
+                                                    <span class="locat-name">
+                                                        Your Location
+                                                    </span>
+                                                    <i class="fa fa-solid fa-angle-down"></i>
+                                                </button>
+                                            </div>
                                             <SearchBar />
                                         </div>
 
@@ -289,7 +301,13 @@ export class Header extends Component {
                                                     ></button>
                                                 </div>
                                                 <div class="offcanvas-body">
-                                                    <ul class="navbar-nav">
+                                                    <ul
+                                                        class="navbar-nav"
+                                                        style={{
+                                                            paddingTop: 10,
+                                                            fontWeight: "bold",
+                                                        }}
+                                                    >
                                                         <li class="nav-item">
                                                             <a
                                                                 class="#"
@@ -335,7 +353,7 @@ export class Header extends Component {
                 </header>
 
                 <div class="mobile-menu d-md-none d-block mobile-cart">
-                    <ul>
+                    <ul style={{ paddingTop: 10, paddingBottom: 10 }}>
                         <li class="active">
                             <a href="/">
                                 <span>Home</span>
@@ -347,14 +365,15 @@ export class Header extends Component {
                                 <span>Category</span>
                             </a>
                         </li>
-                        <li class="mobile-category">
-                            <a href="/services">
-                                <span>Services</span>
-                            </a>
-                        </li>
+
                         <li>
                             <a href="/carts">
                                 <span>Cart</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/search/search">
+                                <span>Search</span>
                             </a>
                         </li>
                     </ul>
