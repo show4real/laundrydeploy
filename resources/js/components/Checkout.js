@@ -212,8 +212,8 @@ export class Checkout extends Component {
                                     <nav>
                                         <ol class="breadcrumb mb-0">
                                             <li class="breadcrumb-item">
-                                                <a href="index.html">
-                                                    <i class="fa-solid fa-house"></i>
+                                                <a href="/">
+                                                    <i class="fa fa-solid fa-house"></i>
                                                 </a>
                                             </li>
                                             <li

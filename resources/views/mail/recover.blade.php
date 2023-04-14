@@ -252,7 +252,7 @@
           <tr>
             <td align="center" bgcolor="#e9ecef" style="padding: 12px 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #666;">
               <p style="margin: 0;">To stop receiving these emails, you can <a href="#" target="_blank">unsubscribe</a> at any time.</p>
-              <p style="margin: 0;">Km 2, Idiroko Road, Ota.</p>
+              <!-- <p style="margin: 0;">Km 2, Idiroko Road, Ota.</p> -->
             </td>
           </tr>
           <!-- end unsubscribe -->

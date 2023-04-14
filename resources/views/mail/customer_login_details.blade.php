@@ -154,7 +154,7 @@
            
             <td align="left" bgcolor="#ffffff" style="padding: 36px 24px 0; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; border-top: 3px solid #d4dadf;">
                 <h5 style="margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -1px; line-height: 48px;">Hi {{ $user->name }},</h5>
-                <h1 style="margin: 0; font-size: 32px; font-weight: 700; letter-spacing: -1px; line-height: 48px;">Reset Password</h1>
+                <h1 style="margin: 0; font-size: 32px; font-weight: 700; letter-spacing: -1px; line-height: 48px;">Login Credentials</h1>
             </td>
           </tr>
         </table>
@@ -180,8 +180,8 @@
           <!-- start copy -->
           <tr>
             <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
-              <p style="margin: 0;">Click the button below to login to your account to track your order. 
-                Please endeavor to reset your password by clicking on forgot password <br/>
+              <p style="margin: 0;">Click on the link below and use the credential to track your orders
+               <br/>
                 <b>Email:{{$customer->email}}<b><br/>Password:{{$customer->firstname}}</p>
             </td>
           </tr>

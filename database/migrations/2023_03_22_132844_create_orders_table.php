@@ -23,9 +23,10 @@ class CreateOrdersTable extends Migration
             $table->integer('vendor_id')->nullable();
             $table->integer('total_price')->nullable();
             $table->integer('product_id')->nullable();
+            $table->integer('user_id')->nullable();
             $table->integer('driver_id')->nullable();
-            $table->integer('order_date')->nullable();
-            $table->integer('delivery_date')->nullable();
+            $table->date('order_date')->nullable();
+            $table->date('delivery_date')->nullable();
             $table->integer('pending')->nullable();
             $table->integer('completed')->nullable();
             $table->integer('cancel')->nullable();

@@ -17,6 +17,7 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->integer('shop_id')->nullable();
             $table->integer('status')->nullable();
+            $table->integer('quantity')->default(1);
             $table->string('service_id')->nullable();
             $table->integer('category_id')->nullable();
             $table->string('cloth_name')->nullable();
