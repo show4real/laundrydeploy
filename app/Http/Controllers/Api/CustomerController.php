@@ -103,9 +103,13 @@ class CustomerController extends Controller
     }
 
     public function vendors(Request $request){
-       
-        $vendors = Vendor::search($request->search)
+        $vendors = User::search($request->search)
+        ->where('vendor', 1)
+        ->where('is_active', 1)->with('vendor')
         ->paginate($request->rows, ['*'], 'page', $request->page);
+       
+        // $vendors = Vendor::search($request->search)
+        // ->paginate($request->rows, ['*'], 'page', $request->page);
            
         return response()->json(compact('vendors'));
     }

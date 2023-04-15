@@ -82,8 +82,11 @@ class User extends Authenticatable implements JWTSubject
     	});
     }
 
-    public function vendor(){
-        
+   public function vendor(){
+        $vendor = $this->belongsTo('App\Models\Vendor', 'id','user_id');
+        if($vendor){
+            return $vendor;
+        }
     }
 
 }

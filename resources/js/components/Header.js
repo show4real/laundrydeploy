@@ -428,18 +428,24 @@ export class Header extends Component {
                                                     <a
                                                         onClick={() =>
                                                             this.onOpen(
-                                                                vendor.id
+                                                                vendor.vendor.id
                                                             )
                                                         }
                                                         data-bs-dismiss="modal"
                                                         aria-label="Close"
                                                     >
                                                         <h6>
-                                                            {vendor.shop_name}
+                                                            {
+                                                                vendor.vendor
+                                                                    .shop_name
+                                                            }
                                                         </h6>
                                                         <span>
                                                             Address:{" "}
-                                                            {vendor.address}
+                                                            {
+                                                                vendor.vendor
+                                                                    .address
+                                                            }
                                                         </span>
                                                     </a>
                                                 </li>
