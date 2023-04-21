@@ -11,6 +11,7 @@ class Cart extends Component {
             loading: false,
             products: [],
             symbol: "$",
+            deleted: 0,
             carts:
                 JSON.parse(localStorage.getItem("cart")) !== null
                     ? JSON.parse(localStorage.getItem("cart"))
@@ -63,7 +64,7 @@ class Cart extends Component {
         const list = this.state.carts;
 
         list.splice(index, 1);
-        this.setState({ carts: list });
+        this.setState({ carts: list, deleted: 1 });
         localStorage.setItem("cart", JSON.stringify(list));
     }
 
@@ -90,12 +91,12 @@ class Cart extends Component {
     }
 
     render() {
-        const { carts } = this.state;
+        const { carts, deleted } = this.state;
         console.log(carts);
 
         return (
             <>
-                <Header />
+                <Header cartItems={carts} added={deleted} />
                 <section class="breadscrumb-section pt-0">
                     <div class="container-fluid-lg">
                         <div class="row">

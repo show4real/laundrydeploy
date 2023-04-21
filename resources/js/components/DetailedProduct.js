@@ -20,6 +20,7 @@ export class DetailedProduct extends Component {
             product_id: window.product_id,
             product: {},
             cartItems: [],
+            added: 0,
         };
     }
 
@@ -59,7 +60,8 @@ export class DetailedProduct extends Component {
             items.push(addToCart);
         }
 
-        this.setState({ cartItems: items });
+        this.setState({ cartItems: items, added: 1 });
+        console.log(items);
         localStorage.setItem("cart", JSON.stringify(items));
     };
 
@@ -78,12 +80,12 @@ export class DetailedProduct extends Component {
     };
 
     render() {
-        const { product, loading, cartItems } = this.state;
+        const { product, loading, cartItems, added } = this.state;
         const alreadyAdded = this.inCart(product.id);
         console.log(alreadyAdded);
         return (
             <>
-                <Header cartItems={cartItems} />
+                <Header cartItems={cartItems} added={added} />
                 {!loading && (
                     <>
                         <section class="breadscrumb-section pt-0">

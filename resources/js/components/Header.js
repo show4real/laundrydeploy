@@ -91,7 +91,7 @@ export class Header extends Component {
     };
 
     render() {
-        const { vendors, loading, vendor, carts } = this.state;
+        const { vendors, loading, carts, vendor, cartItems } = this.state;
 
         return (
             <>
@@ -230,9 +230,14 @@ export class Header extends Component {
                                                             >
                                                                 <i data-feather="shopping-cart"></i>
                                                                 <span class="position-absolute top-0 start-100 translate-middle badge">
-                                                                    {
-                                                                        carts.length
-                                                                    }
+                                                                    {this.props
+                                                                        .added ==
+                                                                    1
+                                                                        ? this
+                                                                              .props
+                                                                              .cartItems
+                                                                              .length
+                                                                        : carts.length}
                                                                 </span>
                                                             </button>
                                                         </a>
